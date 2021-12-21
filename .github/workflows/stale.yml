@@ -1,27 +1,28 @@
-# This workflow warns and then closes issues and PRs that have had no activity for a specified amount of time.
-#
-# You can adjust the behavior by modifying this file.
-# For more information, see:
-# https://github.com/actions/stale
-name: Mark stale issues and pull requests
+# Number of days of inactivity before an issue becomes stale
+daysUntilStale: 1
+# Number of days of inactivity before a stale issue is closed
+daysUntilClose: 7
+# Issues with these labels will never be considered stale
+exemptLabels:
+  - news
+# Set to true to ignore issues in a project (defaults to false)
+exemptProjects: false
 
-on:
-  schedule:
-  - cron: '20 19 * * *'
+# Set to true to ignore issues in a milestone (defaults to false)
+exemptMilestones: false
 
-jobs:
-  stale:
+# Set to true to ignore issues with an assignee (defaults to false)
+exemptAssignees: false
 
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-      pull-requests: write
+# Label to use when marking an issue as stale
+staleLabel: brak_odpowiedzi
+# Comment to post when marking an issue as stale. Set to `false` to disable
+markComment: >
+  W tym wątku nie pojawiła się żadna nowa odpowiedź w ciągu 7 dni. Dlatego automatycznie oznaczamy go jako przeterminowany. 
+  Jeśli w ciągu kolejnych 7 dni nie pojawi się żadna odpowiedź, zamkniemy ten wątek.
+  Dziękujemy za zaangażowanie w dyskusję. Jednocześnie zachęcamy Cię do wypełnienia [ankiety](https://docs.google.com/forms/d/1CYjSAQoHzudrGOrI8Bmb8HJzgyy4MZut5aAacitYkFw/edit). 
+  Podziel się z Nami swoimi spostrzeżeniami. Co możemy robić lepiej ? Chcemy, abyś był w pełni zadowolony z naszej obsługi forum Allegro API. 
+# Comment to post when closing a stale issue. Set to `false` to disable
+closeComment: false
+only: issues
 
-    steps:
-    - uses: actions/stale@v3
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        stale-issue-message: 'Stale issue message'
-        stale-pr-message: 'Stale pull request message'
-        stale-issue-label: 'no-issue-activity'
-        stale-pr-label: 'no-pr-activity'
