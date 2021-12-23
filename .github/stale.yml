@@ -24,7 +24,7 @@ markComment: >
   
   ------
   There was no new reply in this thread within 7 days. Therefore, we automatically marked it as expired. If no response is received within the next 7 days, we will close this thread. 
-  Thank you for engaging in the discussion. At the same time, we encourage you to complete [the survey](https://docs.google.com/forms/d/1ewSE9w07tNyvi8LTTDue54Y1tI5p5Sog_loevheEbRM)
+  Thank you for engaging in the discussion. At the same time, we encourage you to complete [the survey](https://docs.google.com/forms/d/1ewSE9w07tNyvi8LTTDue54Y1tI5p5Sog_loevheEbRM).
 # Comment to post when closing a stale issue. Set to `false` to disable
 closeComment: false
 only: issues
