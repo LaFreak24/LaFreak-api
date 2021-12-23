@@ -1,5 +1,5 @@
 # Number of days of inactivity before an issue becomes stale
-daysUntilStale: 0
+daysUntilStale: 1
 # Number of days of inactivity before a stale issue is closed
 daysUntilClose: 7
 # Issues with these labels will never be considered stale
@@ -17,7 +17,7 @@ exemptAssignees: false
 # Label to use when marking an issue as stale
 staleLabel: brak_odpowiedzi
 # Comment to post when marking an issue as stale. Set to `false` to disable
-markComment: >
+markComment:
   W tym wątku nie pojawiła się żadna nowa odpowiedź w ciągu 7 dni. Dlatego automatycznie oznaczamy go jako przeterminowany. 
   Jeśli w ciągu kolejnych 7 dni nie pojawi się żadna odpowiedź, zamkniemy ten wątek.
   Dziękujemy za zaangażowanie w dyskusję. Jednocześnie zachęcamy Cię do wypełnienia [ankiety](https://docs.google.com/forms/d/1CYjSAQoHzudrGOrI8Bmb8HJzgyy4MZut5aAacitYkFw).
