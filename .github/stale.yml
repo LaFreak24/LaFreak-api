@@ -19,15 +19,14 @@ staleLabel: brak_odpowiedzi
 # Comment to post when marking an issue as stale. Set to `false` to disable
 markComment:
 
-  W tym wątku nie pojawiła się żadna nowa odpowiedź w ciągu 7 dni. Dlatego automatycznie oznaczamy go jako przeterminowany. 
-  Jeśli w ciągu kolejnych 7 dni nie pojawi się żadna odpowiedź, zamkniemy ten wątek.
-  Dziękujemy za zaangażowanie w dyskusję. Jednocześnie zachęcamy Cię do wypełnienia [ankiety](https://docs.google.com/forms/d/1CYjSAQoHzudrGOrI8Bmb8HJzgyy4MZut5aAacitYkFw).
+  W tym wątku nie pojawiła się żadna nowa odpowiedź w ciągu 7 dni, dlatego automatycznie oznaczamy go jako przeterminowany. Jeśli w ciągu kolejnych 7 dni nie pojawi się żadna odpowiedź, wątek zostanie zamknięty. 
+  Dziękujemy za zaangażowanie w dyskusję, jednocześnie zachęcamy Cię do wypełnienia [ankiety](https://docs.google.com/forms/d/1CYjSAQoHzudrGOrI8Bmb8HJzgyy4MZut5aAacitYkFw) dotyczącej naszego wsparcia na forum.
   
   
   ------
   
-  There was no new reply in this thread within 7 days. Therefore, we automatically marked it as expired. If no response is received within the next 7 days, we will close this thread. 
-  Thank you for engaging in the discussion. At the same time, we encourage you to complete [the survey](https://docs.google.com/forms/d/1ewSE9w07tNyvi8LTTDue54Y1tI5p5Sog_loevheEbRM).
+  There was no new reply in this thread within 7 days, therefore, we automatically marked it as expired. If no response is received within the next 7 days, this thread will be closed. 
+  Thank you for engaging in the discussion. At the same time, we encourage you to complete our forum support [survey](https://docs.google.com/forms/d/1ewSE9w07tNyvi8LTTDue54Y1tI5p5Sog_loevheEbRM).
 # Comment to post when closing a stale issue. Set to `false` to disable
 closeComment: false
 only: issues
